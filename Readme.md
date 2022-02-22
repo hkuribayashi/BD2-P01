@@ -23,7 +23,7 @@ Para "instalar" `mysql-server` no seu computador:
 
 Para "instalar" `conda` no seu computador:
 
-- Faça o download do `miniconda` [aqui](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
+- Faça o download do `miniconda` [aqui](https://docs.conda.io/en/latest/miniconda.html#windows-installers)
 - Execute o script baixado
   - Opcional: modifique o "diretório de instalação"
 

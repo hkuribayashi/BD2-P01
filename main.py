@@ -3,7 +3,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Para utilizar o debug utilizar deve-se adicionar ``echo=True``:
-engine = create_engine('mysql+pymysql://root:12345678@localhost/usuarios', echo=True)
+# engine = create_engine('mysql+pymysql://root:12345678@localhost/usuarios', echo=True)
+engine = create_engine('sqlite:///:memory:', echo=True)
 
 # Criando uma classe "Session" já configurada.
 # Session é instanciado posteriormente para interação com a tabela.
