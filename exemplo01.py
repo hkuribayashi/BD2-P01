@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, create_engine
+from sqlalchemy import Column, Integer, String, create_engine, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
@@ -16,7 +16,7 @@ class Usuario(Base):
     """Cada classe representa uma tabela do banco"""
     # Nome da tabela, se a variável não for
     # declarada será utilizado o nome da classe.
-    __tablename__ = 'Usuario'
+    __tablename__ = 'usuarios'
 
     # Colunas da tabela.
     id = Column(Integer, primary_key=True)
