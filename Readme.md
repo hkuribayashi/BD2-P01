@@ -64,7 +64,7 @@ Toda vez que desejarmos executar o projeto, é necessário ativar o ambiente com
 
 ## Rodando o exemplo
 
-python main.py
+python exemplo01.py
 
 
 
