@@ -54,7 +54,11 @@ Na tela posterior, informar o endereço do projeto: `https://github.com/hkuribay
 
 ### Vinculando o Ambiente no PyCharm
 
+Após realizar a importação do projeto, o projeto importado apresentará erros de compilação, dada a falta de um interpretador `Python`.
 
+Conforme exemplo a seguir, siga a opção de configurar um interpretador `Python`.
+
+![Screenshot](Tela3.png)
 
 
 
