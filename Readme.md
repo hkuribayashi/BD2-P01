@@ -64,7 +64,7 @@ Na opção `Add Python Interpreter` (conforme exemplo abaixo), escolher a opçã
 
 ![Screenshot](Tela4.png)
 
-Após
+Após a realização das configurações, o projeto estatá pronto para ser executado na opção `Run..`
 
 
 
