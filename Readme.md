@@ -56,7 +56,7 @@ Na tela posterior, informar o endereço do projeto: `https://github.com/hkuribay
 
 Após realizar a importação do projeto, o projeto importado apresentará erros de compilação, dada a falta de um interpretador `Python`.
 
-Conforme exemplo a seguir, siga a opção de configurar um interpretador `Python`.
+Conforme exemplo a seguir, siga a opção de configurar um interpretador `Python`, escolhendo a opção `Add Interpreter...`
 
 ![Screenshot](Tela3.png)
 
