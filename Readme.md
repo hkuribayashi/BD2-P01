@@ -30,41 +30,24 @@ Para "instalar" `conda` no seu computador:
 No site [site oficial](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) há instruções detalhadas.
 
 Após a instalação, feche o terminal e abra novamente.
-Se tudo certo, o seu prompt deve estar prefixado com o nome de um ambiente, algo como:
-
-`(base) user@computer:`
-
-Execute o comando `conda config --set auto_activate_base false`, assim o conda não ira ativar o ambiente `base` toda vez que você abrir um terminal.
-Feche o terminal e abra novamente. Se tudo deu certo, o prompt deve estar normal novamente (sem prefixos do `conda`).
-
-### Sobre conda e miniconda
-
-Um breve esclarecimento sobre nomes:
-- `conda` é um programa que cria/gerencia ambientes e instala programas
-- `miniconda` é um "combo" que contém: `conda` + dependências para rodar `conda`
-
-Nós "instalamos" `miniconda` para executar o `conda`.
 
 ### Criando o ambiente
 
-Com `conda` instalado, execute (na raiz do repositório) o comando:
+Com `conda` instalado, execute (na raiz do projeto) o comando:
 `conda env create --name bd2 --file requirements.txt`
 
-Esse comando criará um ambiente chamado `bd2` (você pode renomear se quiser) a partir da lista de pacotes/dependências enumeradas no arquivo conda_env.yaml (que está na raiz do repositório).
+Esse comando criará um ambiente chamado `bd2` (você pode renomear se quiser) a partir da lista de pacotes/dependências enumeradas no arquivo requirements.txt (que está na raiz do repositório).
 
 O ambiente é criado no "diretório de instalação" que você configurou durante a instalação do conda.
 
 O resto deste texto assume que o nome do ambiente criado é `bd2`
 
-### Ativando o ambiente
+### Vinculando o Ambiente no PyCharm
 
 Toda vez que desejarmos executar o projeto, é necessário ativar o ambiente com o comando:
 `conda activate bd2`
 
 
-## Rodando o exemplo
-
-python exemplo01.py
 
 
 
