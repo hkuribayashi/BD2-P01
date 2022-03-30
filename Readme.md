@@ -42,10 +42,13 @@ O ambiente é criado no "diretório de instalação" que você configurou durant
 
 O resto deste texto assume que o nome do ambiente criado é `bd2`
 
+### Importando o projeto no PyCharm
+
+Com o Pycharm instalado é necessário importar o 
+
 ### Vinculando o Ambiente no PyCharm
 
-Toda vez que desejarmos executar o projeto, é necessário ativar o ambiente com o comando:
-`conda activate bd2`
+
 
 
 
