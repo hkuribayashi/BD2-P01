@@ -48,6 +48,8 @@ Com o Pycharm instalado é necessário importar o projeto atual por meio da func
 
 ![Screenshot](Tela1.png)
 
+Na tela posterior, informar o endereço do projeto: `https://github.com/hkuribayashi/BD2-P01.git`
+
 ![Screenshot](Tela2.png)
 
 ### Vinculando o Ambiente no PyCharm
