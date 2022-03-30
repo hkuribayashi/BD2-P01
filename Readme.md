@@ -60,7 +60,11 @@ Conforme exemplo a seguir, siga a opção de configurar um interpretador `Python
 
 ![Screenshot](Tela3.png)
 
+Na opção `Add Python Interpreter` (conforme exemplo abaixo), escolher a opção `Existing environment` e informar o caminho do ambiente criado nos passos anteriores.
 
+![Screenshot](Tela4.png)
+
+Após
 
 
 
