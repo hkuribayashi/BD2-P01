@@ -46,6 +46,8 @@ O resto deste texto assume que o nome do ambiente criado é `bd2`
 
 Com o Pycharm instalado é necessário importar o 
 
+![Screenshot](Tela1.png)
+
 ### Vinculando o Ambiente no PyCharm
 
 
