@@ -44,9 +44,11 @@ O resto deste texto assume que o nome do ambiente criado é `bd2`
 
 ### Importando o projeto no PyCharm
 
-Com o Pycharm instalado é necessário importar o 
+Com o Pycharm instalado é necessário importar o projeto atual por meio da funcionalidade de VCS, conforme demonstrado abaixo.
 
 ![Screenshot](Tela1.png)
+
+![Screenshot](Tela2.png)
 
 ### Vinculando o Ambiente no PyCharm
 
