@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 
 # Para utilizar o debug utilizar deve-se adicionar ``echo=True``:
 engine = create_engine('mysql+pymysql://root:12345678@localhost/usuarios', echo=True)
-#engine = create_engine('sqlite:///:memory:', echo=True)
+# engine = create_engine('sqlite:///:memory:', echo=True)
 
 # Criando uma classe "Session" já configurada.
 # Session é instanciado posteriormente para interação com a tabela.
@@ -30,6 +30,15 @@ class Usuario(Base):
         self.sexo = sexo
 
 
+class Endereco(Base):
+    __tablename__ = 'enderecos'
+    id = Column(Integer, primary_key=True)
+    rua = Column('rua', String(32))
+    bairro = Column('bairro', String(32))
+    cidade = Column('cidade', String(32))
+    estado = Column('estado', String(32))
+
+
 if __name__ == "__main__":
     # Removendo todas as tabelas do banco.
     Base.metadata.drop_all(engine)
@@ -43,14 +52,15 @@ if __name__ == "__main__":
     # Criando os dados que serão inseridos na tabela.
     # Classe com o construtor.
     usuario_1 = Usuario('Joao', 35, 'Masculino')
-    usuario_2 = Usuario('Maria', 25, 'Feminino')
+    endereco_1 = Endereco(rua='Av. J', bairro='Nova Marabá', cidade='Marabá', estado='Pará')
 
     # Pode-se crirar usuarios por meio de uma coleção
     # usuarios = [Usuario('Maria', 20, 'Feminino'), Usuario('Pedro', 50, 'Masculino')]
 
     # Inserindo registro na tabela.
     session.add(usuario_1)
-    session.add(usuario_2)
+    session.add(endereco_1)
+
 
     # Inserindo vários registros na tabela.
     # session.add_all(usuarios)
@@ -62,8 +72,7 @@ if __name__ == "__main__":
     # usuario_2 = Usuario('Aline', 22, 'Feminino')
     # session.add(usuario_2)
 
-    usuario = session.query(Usuario).filter_by(nome='Aline').first()
-    print(usuario)
+    # usuario = session.query(Usuario).filter_by(nome='Aline').first()
     # if usuario is usuario_2:
     #     print("instancia usuario é Aline")
     # else:
@@ -85,14 +94,14 @@ if __name__ == "__main__":
 
     # Alterar um registro da tabela.
     # print('Nome ANTES da alteração:', session.query(Usuario).filter(Usuario.id == 1).one().nome)
-    session.query(Usuario).filter(Usuario.id == 1).update({'nome': 'Roberto'})
-    session.commit()
+    # session.query(Usuario).filter(Usuario.id == 1).update({'nome': 'Roberto'})
+    # session.commit()
     # print('Nome DEPOIS da alteração:', session.query(Usuario).filter(Usuario.id == 1).one().nome)
 
     # Remover um registro da tabela.
     # print('Registro ANTES da remoção:', session.query(Usuario).filter(Usuario.id == 1).one_or_none())
-    session.query(Usuario).filter(Usuario.id == 2).delete()
-    session.commit()
+    # session.query(Usuario).filter(Usuario.id == 1).delete()
+    # session.commit()
     # print('Registro DEPOIS da remoção:', session.query(Usuario).filter(Usuario.id == 1).one_or_none())
 
     # Fechando a sessão.
